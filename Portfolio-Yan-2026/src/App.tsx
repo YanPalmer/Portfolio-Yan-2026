@@ -1,24 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import 'tailwindcss'
-import Home from './pages/Home'
+// import Home from './pages/Home'
+import Header from './components/Header'
+import Section from './components/Section'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Home />
-      <h1>Cabeçalho</h1>
+      <Header />
+      <Section />
+      <Section />
     </>
   )
 }
 
 export default App
 
-{/* <div>
+{/* 
+  const [count, setCount] = useState(0)
+
+  <div>
         <Home />
         <h1 className='bg-green-500'>Teste do vite</h1>
         <a href="https://vite.dev" target="_blank">

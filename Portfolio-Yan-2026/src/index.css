@@ -1,6 +1,17 @@
 @import "tailwindcss";
 
-:root {
+@theme {
+  --color-headerBackground: #0A0A0D;
+  --color-background: #0F1523;
+  --color-whiteText: #B7B5B5;
+  --color-hoverText: #17171A;
+}
+
+.links li {
+  @apply text-white hover:text-whiteText transition;
+}
+
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -67,4 +78,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

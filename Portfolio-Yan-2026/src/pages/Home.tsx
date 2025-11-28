@@ -1,4 +1,4 @@
-import Header from "../components/Header"
+import Header from "../components/HeaderTeste"
 
 // Exemplo simples de página Home
 function Home() {
