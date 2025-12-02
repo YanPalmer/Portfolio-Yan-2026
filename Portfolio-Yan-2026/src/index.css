@@ -2,6 +2,8 @@
 
 @theme {
   --color-headerBackground: #0A0A0D;
+  --color-navBackground: #111423;
+  --color-aboutBackground: #101012;
   --color-background: #0F1523;
   --color-whiteText: #B7B5B5;
   --color-hoverText: #17171A;

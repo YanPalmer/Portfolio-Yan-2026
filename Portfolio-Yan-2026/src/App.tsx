@@ -4,17 +4,12 @@
 import './App.css'
 import 'tailwindcss'
 // import Home from './pages/Home'
-import Header from './components/Header'
-import Section from './components/Section'
+import Home from './pages/Home'
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <Section />
-      <Section />
-    </>
+    <Home />
   )
 }
 
