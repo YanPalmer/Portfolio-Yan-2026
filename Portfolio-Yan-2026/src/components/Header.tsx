@@ -2,7 +2,7 @@ import 'tailwindcss'
 
 function Header() {
   return (
-    <header className='fixed top-0 right-0 left-0 bg-linear-to-r from-navBackground to-navBackground text-white h-16 flex flex-row justify-around items-center'>
+    <header className='fixed top-0 right-0 left-0 bg-linear-to-r from-navBackground to-navBackground text-white h-16 flex flex-row justify-around items-center border-b-2 border-gray-800'>
       <h1>Logo</h1>
       <ul className='links flex flex-row justify-around items-center w-110 h-full'>
         <li className='text-white hover:text-whiteText'>Home</li>
