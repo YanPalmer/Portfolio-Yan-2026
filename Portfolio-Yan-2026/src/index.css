@@ -6,8 +6,9 @@
   --color-navBotomColor: #2F3032;
   --color-aboutBackground: #101012;
   --color-background: #0F1523;
-  --color-whiteText: #B7B5B5;
+  --color-whiteText: #D0CDCA;
   --color-hoverText: #17171A;
+  --color-card: oklch(0.21 0.006 285.885);
 }
 
 .links li {
