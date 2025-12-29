@@ -1,5 +1,7 @@
 import 'tailwindcss';
 import { ExternalLink } from "lucide-react";
+import oioidocinhosImage from "../../assets/Oi_Oi_Docinhos_imagem.png";
+import meuprimeiroportfolioImage from "../../assets/Meu_Primeiro_Portfólio_imagem.png";
 
 interface Project {
   id: number;
@@ -7,6 +9,7 @@ interface Project {
   description: string;
   emoji: string;
   technologies: string[];
+  imageUrl?: string;
   liveUrl?: string;
 }
 
@@ -16,31 +19,17 @@ const projects: Project[] = [
     title: "Cardápio Oi Oi Docinhos",
     description: "Cardápio digital interativo para confeitaria com design moderno.",
     emoji: "🍰",
-    technologies: ["React", "TypeScript", "TailwindCSS", "Vercel"],
+    technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
+    imageUrl: oioidocinhosImage,
     liveUrl: "https://vercel.com/yanpalmers-projects/cardapio-oi-oi-docinhos/3W4Dh7ydRpW4m3M5a1S2KqV6soE9",
   },
   {
     id: 2,
-    title: "Repositório Profissional",
-    description: "Plataforma de repositório com funcionalidades avançadas.",
+    title: "Meu Primeiro Portfólio",
+    description: "Portfólio antigo para testes e estudos.",
     emoji: "📚",
     technologies: ["React", "Node.js", "PostgreSQL", "Docker"],
-    liveUrl: "https://vercel.com/yanpalmers-projects/repositorio-profissional/BsgdETJbbirowrN7WxHxTP2kFHST",
-  },
-  {
-    id: 3,
-    title: "Repositório Profissional",
-    description: "Plataforma de repositório com funcionalidades avançadas.",
-    emoji: "📚",
-    technologies: ["React", "Node.js", "PostgreSQL", "Docker"],
-    liveUrl: "https://vercel.com/yanpalmers-projects/repositorio-profissional/BsgdETJbbirowrN7WxHxTP2kFHST",
-  },
-  {
-    id: 4,
-    title: "Repositório Profissional",
-    description: "Plataforma de repositório com funcionalidades avançadas.",
-    emoji: "📚",
-    technologies: ["React", "Node.js", "PostgreSQL", "Docker"],
+    imageUrl: meuprimeiroportfolioImage,
     liveUrl: "https://vercel.com/yanpalmers-projects/repositorio-profissional/BsgdETJbbirowrN7WxHxTP2kFHST",
   },
 ];
@@ -65,7 +54,7 @@ function Projects() {
                 key={project.id}
                 className="group relative bg-card rounded-lg overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:shadow-lg"
               >
-                <div className="relative h-48 bg-linear-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center overflow-hidden">
+                <div className="bg-cover bg-center h-48 flex items-center justify-center"style={{ backgroundImage: `url(${project.imageUrl})` }}>
                   <div className="text-6xl group-hover:scale-110 transition-transform duration-300">
                     {project.emoji}
                   </div>
