@@ -2,6 +2,9 @@ import 'tailwindcss';
 import { ExternalLink } from "lucide-react";
 import oioidocinhosImage from "../../assets/Oi_Oi_Docinhos_imagem.png";
 import meuprimeiroportfolioImage from "../../assets/Meu_Primeiro_Portfólio_imagem.png";
+import responsiveportfoliowebJohnSmithImage from "../../assets/Responsive_portfolio_website_John-Smith.png"
+import copiadonetflixImage from "../../assets/cópia_do_netflix.png";
+import authappImage from "../../assets/auth_app.png"
 
 interface Project {
   id: number;
@@ -16,21 +19,48 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Cardápio Oi Oi Docinhos",
-    description: "Cardápio digital interativo para confeitaria com design moderno.",
-    emoji: "🍰",
+    title: "Responsive Portfólio Website",
+    description: "Portfólio responsivo.",
+    emoji: "",
     technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
-    imageUrl: oioidocinhosImage,
-    liveUrl: "https://vercel.com/yanpalmers-projects/cardapio-oi-oi-docinhos/3W4Dh7ydRpW4m3M5a1S2KqV6soE9",
+    imageUrl: responsiveportfoliowebJohnSmithImage ,
+    liveUrl: "https://projetos-para-praticar-you-tube.vercel.app/",
   },
   {
     id: 2,
     title: "Meu Primeiro Portfólio",
     description: "Portfólio antigo para testes e estudos.",
-    emoji: "📚",
-    technologies: ["React", "Node.js", "PostgreSQL", "Docker"],
+    emoji: "",
+    technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
     imageUrl: meuprimeiroportfolioImage,
-    liveUrl: "https://vercel.com/yanpalmers-projects/repositorio-profissional/BsgdETJbbirowrN7WxHxTP2kFHST",
+    liveUrl: "https://repositorio-profissional-1fpgfszg7-yanpalmer.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Cardápio Oi Oi Docinhos",
+    description: "Cardápio digital interativo para confeitaria com design moderno.",
+    emoji: "",
+    technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
+    imageUrl: oioidocinhosImage,
+    liveUrl: "https://cardapio-oi-oi-docinhos-exl9fqmcy-yanpalmer.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Cópia do Netflix (apenas para estudo)",
+    description: "Feito com o intuito de testar minhas habilidades.",
+    emoji: "",
+    technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
+    imageUrl: copiadonetflixImage,
+    liveUrl: "https://copia-do-netflix.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Auth App",
+    description: "Cadastro e Login de usuários com banco de dados. (caso queira testar, use um email fictício)",
+    emoji: "",
+    technologies: ["Vite", "React", "Firebase", "Vercel"],
+    imageUrl: authappImage,
+    liveUrl: "https://auth-dxaceuz8t-yanpalmers-projects.vercel.app/",
   },
 ];
 
