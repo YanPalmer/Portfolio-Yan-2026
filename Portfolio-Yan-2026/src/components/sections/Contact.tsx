@@ -2,6 +2,7 @@ import 'tailwindcss';
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { PORTFOLIO_INFO } from "../../lib/constants";
 import { useState } from "react";
+import resumePdf from '../../assets/Currículo-Yan-Palmer-2026.pdf'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -37,10 +38,10 @@ function Contact() {
     }
   };
 
-  const downloadResume = () => {
+  const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "Yan_Palmer_Resume.pdf";
+    link.href = resumePdf;
+    link.download = "Currículo-Yan-Palmer-2026.pdf";
     link.click();
   };
 
@@ -109,7 +110,7 @@ function Contact() {
 
               <div className="pt-6 border-t border-gray-700">
                 <button
-                  onClick={downloadResume}
+                  onClick={handleDownloadResume}
                   className="w-full px-8 py-3 text-lg font-semibold text-whiteText bg-linear-to-r from-blue-600 to-purple-600 rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
                 >
                   Baixar Currículo

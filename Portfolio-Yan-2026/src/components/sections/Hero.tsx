@@ -1,6 +1,7 @@
 import 'tailwindcss'
 import { PORTFOLIO_INFO } from '../../lib/constants'
 import { Github, Linkedin, Mail } from "lucide-react";
+import resumePdf from '../../assets/Currículo-Yan-Palmer-2026.pdf'
 
 function Hero() {
   const handleContactClick = () => {
@@ -10,8 +11,8 @@ function Hero() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "Yan_Palmer_Resume.pdf";
+    link.href = resumePdf;
+    link.download = "Currículo-Yan-Palmer-2026.pdf";
     link.click();
   };
 
