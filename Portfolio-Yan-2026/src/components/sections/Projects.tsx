@@ -47,7 +47,7 @@ const projects: Project[] = [
 
 function Projects() {
   return (
-    <section id="projects" className="max-w-full py-20 bg-navBackground">
+    <section id="projetos" className="max-w-full py-20 bg-navBackground">
       <div className="px-6 md:px-14 max-w-7xl mx-auto">
         <div className="space-y-12">
           <div className="space-y-4">

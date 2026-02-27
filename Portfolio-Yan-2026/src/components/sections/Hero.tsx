@@ -16,7 +16,7 @@ function Hero() {
   };
 
   return (
-    <section className="max-w-full flex items-center justify-center min-h-screen py-20 bg-navBackground">
+    <section id="home" className="max-w-full flex items-center justify-center min-h-screen py-20 bg-navBackground">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-items-center px-6 md:px-14 max-w-7xl">
         <div className="space-y-8 w-full">
           <div className="space-y-6 mb-12">
