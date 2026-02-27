@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* Modo escuro (padrão) */
   --color-headerBackground: #0A0A0D;
   --color-navBackground: #111423;
   --color-navBotomColor: #2F3032;
@@ -11,8 +12,38 @@
   --color-card: oklch(0.21 0.006 285.885);
 }
 
+/* Modo claro – sobrescreve as variáveis quando .theme-light está no root */
+.theme-light {
+  --color-headerBackground: #f1f5f9;
+  --color-navBackground: #e2e8f0;
+  --color-navBotomColor: #cbd5e1;
+  --color-aboutBackground: #f8fafc;
+  --color-background: #ffffff;
+  --color-whiteText: #1e293b;
+  --color-hoverText: #0f172a;
+  --color-card: oklch(0.98 0.005 285.885);
+}
+
+/* Bordas e inputs no modo claro */
+.theme-light .border-gray-700 {
+  border-color: #cbd5e1;
+}
+.theme-light input,
+.theme-light textarea {
+  background-color: #ffffff;
+  border-color: #e2e8f0;
+  color: #1e293b;
+}
+.theme-light input::placeholder,
+.theme-light textarea::placeholder {
+  color: #94a3b8;
+}
+
 .links li {
-  @apply text-white hover:text-whiteText transition;
+  @apply text-whiteText transition;
+}
+.links li:hover {
+  opacity: 0.9;
 }
 
 :root {

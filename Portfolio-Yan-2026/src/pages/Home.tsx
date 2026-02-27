@@ -8,7 +8,7 @@ import Contact from "../components/sections/Contact"
 // Exemplo simples de página Home
 function Home() {
   return (
-    <div className="w-full min-h-screen bg-black text-white font-sans">
+    <div className="w-full min-h-screen bg-background text-whiteText font-sans">
       <Header />
       <main>
         <Hero />
