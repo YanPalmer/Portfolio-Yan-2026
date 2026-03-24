@@ -2,6 +2,7 @@ import 'tailwindcss'
 import { PORTFOLIO_INFO } from '../../lib/constants'
 import { Github, Linkedin, Mail } from "lucide-react";
 import resumePdf from '../../assets/Currículo-Yan-Palmer-2026.pdf'
+import yanFotoProfissional from '../../assets/Yan_Foto_Profissional_sem_fundo.png'
 
 function Hero() {
   const handleContactClick = () => {
@@ -81,16 +82,13 @@ function Hero() {
         </div>
 
         <div className="hidden md:flex items-center justify-center w-full">
-          <div className="relative w-80 h-80">
-            <div className="absolute inset-0 bg-linear-to-r from-blue-500 to-purple-500 rounded-lg blur-3xl opacity-20 animate-pulse"></div>
-            <div className="relative w-full h-full bg-card rounded-lg border border-gray-700 flex items-center justify-center">
-              <div className="text-whiteText flex flex-col items-center">
-                <div className="text-6xl mb-4">👨‍💻</div>
-                <p className="text-sm text-muted-foreground">
-                  Full Stack Developer
-                </p>
-              </div>
-            </div>
+          <div className="relative h-[800px] w-[800px] max-w-full flex items-center justify-center">
+            <div className="absolute inset-0 z-0 bg-linear-to-r from-blue-500 to-purple-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+            <img
+              src={yanFotoProfissional}
+              alt="Yan Palmer"
+              className="relative z-10 h-full w-auto max-h-[1000px] object-contain"
+            />
           </div>
         </div>
       </div>
