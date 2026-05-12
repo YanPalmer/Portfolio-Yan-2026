@@ -5,11 +5,15 @@ import './App.css'
 import 'tailwindcss'
 // import Home from './pages/Home'
 import Home from './pages/Home'
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
 
   return (
-    <Home />
+    <>
+      <Home />
+      <Analytics />
+    </>
   )
 }
 
