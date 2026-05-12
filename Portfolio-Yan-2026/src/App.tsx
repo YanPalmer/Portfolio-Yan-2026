@@ -3,13 +3,17 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import 'tailwindcss'
+import { Analytics } from '@vercel/analytics/react'
 // import Home from './pages/Home'
 import Home from './pages/Home'
 
 function App() {
 
   return (
-    <Home />
+    <>
+      <Home />
+      <Analytics />
+    </>
   )
 }
 
